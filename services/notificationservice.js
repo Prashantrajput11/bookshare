@@ -1,7 +1,7 @@
 import * as Notifications from "expo-notifications";
 import { Platform } from "react-native";
 
-// Configure notifications settings with more specific options
+// // Configure notifications settings with more specific options
 Notifications.setNotificationHandler({
 	handleNotification: async () => ({
 		shouldShowAlert: true,
@@ -11,7 +11,7 @@ Notifications.setNotificationHandler({
 	}),
 });
 
-// Add initialization function
+// // Add initialization function
 export async function initializeNotifications() {
 	try {
 		// Set notification channel for Android
@@ -28,7 +28,7 @@ export async function initializeNotifications() {
 	}
 }
 
-// Update permission management with more detailed error handling
+// // Update permission management with more detailed error handling
 export async function askNotificationPermission() {
 	try {
 		const { status: existingStatus } =
@@ -57,7 +57,7 @@ export async function askNotificationPermission() {
 	}
 }
 
-// Enhanced local notification function with more options
+// // Enhanced local notification function with more options
 export async function scheduleLocalNotification() {
 	try {
 		const hasPermission = await askNotificationPermission();
@@ -76,8 +76,9 @@ export async function scheduleLocalNotification() {
 				data: { data: "goes here" },
 			},
 			trigger: {
-				seconds: 60,
-				channelId: "default", // For Android
+				hour: 22, // 🔥 10 PM (24-hour format)
+				minute: 19, // 🔥 19 minutes
+				repeats: true, // 🔄 Daily Repeat
 			},
 		});
 
