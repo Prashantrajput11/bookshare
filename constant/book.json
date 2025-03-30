@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"title": "Atomic Habits",
+		"author": "James Clear",
+		"book_image": "https://example.com/atomic_habits.jpg",
+		"genre": "Self-help",
+		"rating": 4.8
+	},
+	{
+		"id": 2,
+		"title": "The Alchemist",
+		"author": "Paulo Coelho",
+		"book_image": "https://example.com/the_alchemist.jpg",
+		"genre": "Fiction",
+		"rating": 4.7
+	},
+	{
+		"id": 3,
+		"title": "Sapiens",
+		"author": "Yuval Noah Harari",
+		"book_image": "https://example.com/sapiens.jpg",
+		"genre": "History",
+		"rating": 4.6
+	},
+	{
+		"id": 4,
+		"title": "Deep Work",
+		"author": "Cal Newport",
+		"book_image": "https://example.com/deep_work.jpg",
+		"genre": "Productivity",
+		"rating": 4.5
+	},
+	{
+		"id": 5,
+		"title": "The Subtle Art of Not Giving a F*ck",
+		"author": "Mark Manson",
+		"book_image": "https://example.com/subtle_art.jpg",
+		"genre": "Self-help",
+		"rating": 4.4
+	}
+]
